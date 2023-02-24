@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="horizontal"
+    tools:context=".StartingFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="@string/whiskey"
+        android:textAlignment="center"
+        android:textColor="@color/blue_purple"
+        android:textStyle="bold"
+        android:autoSizeTextType="uniform"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline"/>
+
+    <Button
+        android:id="@+id/howToPlayButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue_purple"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/how_to_play"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/startButton"
+        app:layout_constraintEnd_toEndOf="@id/startButton"
+        app:layout_constraintTop_toBottomOf="@id/startButton"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue_purple"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/start_button"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
