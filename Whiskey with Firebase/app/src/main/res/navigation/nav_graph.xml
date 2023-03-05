@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startingFragment">
+
+    <fragment
+        android:id="@+id/startingFragment"
+        android:name="emeraldbismaputra.practice.myapplication.StartingFragment"
+        android:label="starting_fragment"
+        tools:layout="@layout/starting_fragment" >
+        <action
+            android:id="@+id/startPickDeck"
+            app:destination="@id/deckFragment" />
+        <action
+            android:id="@+id/openHowToPlay"
+            app:destination="@id/howToPlayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deckFragment"
+        android:name="emeraldbismaputra.practice.myapplication.DeckFragment"
+        android:label="deck_fragment"
+        tools:layout="@layout/deck_fragment" >
+        <action
+            android:id="@+id/enterPlayers"
+            app:destination="@id/pickPlayers" />
+        <action
+            android:id="@+id/toSavedDeckOptionsFragment"
+            app:destination="@id/savedDeckOptionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pickPlayers"
+        android:name="emeraldbismaputra.practice.myapplication.EnterPlayers"
+        android:label="EnterPlayers" >
+        <action
+            android:id="@+id/startGame"
+            app:destination="@id/game" />
+        <argument
+            android:name="Deck"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/game"
+        android:name="emeraldbismaputra.practice.myapplication.Game"
+        android:label="Game" >
+        <argument
+            android:name="playerArray"
+            app:argType="string[]" />
+        <argument
+            android:name="deck"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedDeckOptionsFragment"
+        android:name="emeraldbismaputra.practice.myapplication.SavedDeckOptionsFragment"
+        android:label="saved_deck_options_fragment"
+        tools:layout="@layout/saved_deck_options_fragment" >
+        <argument
+            android:name="Deck"
+            app:argType="string" />
+        <action
+            android:id="@+id/enterPlayers"
+            app:destination="@id/pickPlayers" />
+        <action
+            android:id="@+id/savedDeckList"
+            app:destination="@id/savedDeckList" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedDeckList"
+        android:name="emeraldbismaputra.practice.myapplication.SavedDeckList"
+        android:label="SavedDeckList" >
+        <action
+            android:id="@+id/showCardDetail"
+            app:destination="@id/savedCardDetail" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedCardDetail"
+        android:name="emeraldbismaputra.practice.myapplication.SavedCardDetail"
+        android:label="SavedCardDetail" >
+        <argument
+            android:name="cardDate"
+            app:argType="java.util.Date" />
+    </fragment>
+    <fragment
+        android:id="@+id/howToPlayFragment"
+        android:name="emeraldbismaputra.practice.myapplication.HowToPlayFragment"
+        android:label="HowToPlayFragment" />
+</navigation>

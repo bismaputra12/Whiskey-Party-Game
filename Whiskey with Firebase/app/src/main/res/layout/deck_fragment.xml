@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="horizontal"
+    tools:context=".DeckFragment">
+
+    <Button
+        android:id="@+id/thirdSampleDeck"
+        android:layout_width="255dp"
+        android:layout_height="76dp"
+        android:width="150dp"
+        android:height="60dp"
+        android:backgroundTint="@color/grey"
+        android:text="@string/coming_soon"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:cornerRadius="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/secondSampleDeck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/secondSavedDeck"
+        android:layout_width="255dp"
+        android:layout_height="76dp"
+        android:width="150dp"
+        android:height="60dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/not_available"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:cornerRadius="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/firstSavedDeck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/secondSampleDeck"
+        android:layout_width="255dp"
+        android:layout_height="76dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/sample2"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/grey"
+        android:visibility="visible"
+        app:cornerRadius="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/firstSampleDeck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/firstSavedDeck"
+        android:layout_width="255dp"
+        android:layout_height="76dp"
+        android:width="150dp"
+        android:height="60dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/saved_deck_1"
+        android:textColor="@color/grey"
+        android:visibility="invisible"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/savedDeckButton"
+        android:layout_width="116dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/saved_deck_button"
+        android:textColor="@color/grey"
+        app:cornerRadius="40dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="@id/firstSampleDeck"
+        app:layout_constraintBottom_toTopOf="@id/firstSampleDeck" />
+
+    <TextView
+        android:id="@+id/pickACardText"
+        android:layout_width="301dp"
+        android:layout_height="109dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="@string/pick_deck"
+        android:textAlignment="center"
+        android:textColor="@color/blue_purple"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@id/sampleDeckButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/thirdSavedDeck"
+        android:layout_width="255dp"
+        android:layout_height="76dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/not_available"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:cornerRadius="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/secondSavedDeck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent
+"/>
+
+    <Button
+        android:id="@+id/firstSampleDeck"
+        android:layout_width="255dp"
+        android:layout_height="76dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/sample1"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/inter_bold"
+        android:visibility="visible"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/sampleDeckButton"
+        android:layout_width="116dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/blue_purple"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/sample_deck_button"
+        android:textColor="@color/white"
+        app:cornerRadius="40dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="@id/firstSampleDeck"
+        app:layout_constraintBottom_toTopOf="@id/firstSampleDeck"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

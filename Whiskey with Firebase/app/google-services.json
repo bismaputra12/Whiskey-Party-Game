@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "34009490796",
+    "project_id": "whiskey-party-game",
+    "storage_bucket": "whiskey-party-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34009490796:android:8ceecc39dfe7899bb33f49",
+        "android_client_info": {
+          "package_name": "emeraldbismaputra.practice.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34009490796-f1eoh0mf92mt66fak5r5oge2546sh1c5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAokaxbfLS9OFg3gOD3sA4YPQ_0FenOIBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "34009490796-f1eoh0mf92mt66fak5r5oge2546sh1c5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
